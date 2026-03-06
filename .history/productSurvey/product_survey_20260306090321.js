@@ -19,7 +19,7 @@ function submitFeedback() {
   document.getElementById('userDesignation').innerHTML = designation;
   document.getElementById('userProductChoice').innerHTML = productType;
   document.getElementById('userFeedback').innerHTML = feedback;
-  document.getElementById('userExperience').innerHTML = userExp;
+  document.getElementById('userExperience')
 
   document.getElementById('userInfo').style.display = 'block';
 }
