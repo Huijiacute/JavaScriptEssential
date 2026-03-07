@@ -34,9 +34,8 @@ const hrDisplay = document.getElementById('displayHREmployees')
 hrDisplay.addEventListener('click', displayHREmployees)
 
 const findEmployeeById = () => {
-    const employeeId = prompt("Enter employee ID: ")
-    const numEmployee = parseInt(employeeId)
-    const foundEmployee = employees.find(employee => employee.id === numEmployee)
+    const employeeId = prompt(parseInt("Enter employee ID: "))
+    const foundEmployee = employees.find(employee => employee.id === employeeId)
     if (foundEmployee) {
         document.getElementById('employeesDetails').innerHTML = `<p>${foundEmployee.id}: ${foundEmployee.name}: ${foundEmployee.name} - ${foundEmployee.department} - $${foundEmployee.salary}</p>`
     } else {
@@ -44,5 +43,4 @@ const findEmployeeById = () => {
     }
 }
 
-const findEmployee = document.getElementById('findEmployeeById');
-findEmployee.addEventListener('click', findEmployeeById)
+const findEmployee = document.getElementById('findEmployeeId');
