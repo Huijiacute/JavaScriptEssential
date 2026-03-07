@@ -7,7 +7,7 @@ const employees = [
 const displayEmployees = () => {
   const totalEmployees = employees.map(employee => `<p>${employee.id}: ${employee.name} - ${employee.age} - ${employee.department} - $${employee.salary}</p>`).join('');
   document.getElementById('employeesDetails').innerHTML = totalEmployees
-}
+  }
 
 const displayEmployeeInHTML = document.getElementById('displayEmployees')
 displayEmployeeInHTML.addEventListener('click', displayEmployees)
