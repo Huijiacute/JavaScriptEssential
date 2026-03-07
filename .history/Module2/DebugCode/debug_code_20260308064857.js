@@ -22,7 +22,7 @@
   } else {
     displayResult('Please enter valid numbers')
   }
-// }
+}
 
 function performOperation() {
 // Get user input from input fields

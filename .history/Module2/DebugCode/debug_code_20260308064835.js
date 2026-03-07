@@ -1,4 +1,4 @@
-// const performOperation = () => {
+const performOperation = () => {
   const multiply = (a, b) => {
     // Introduce a debugger statement to pause execution
     debugger;
@@ -22,7 +22,7 @@
   } else {
     displayResult('Please enter valid numbers')
   }
-// }
+}
 
 function performOperation() {
 // Get user input from input fields
